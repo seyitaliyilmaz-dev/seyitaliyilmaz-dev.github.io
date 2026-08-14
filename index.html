@@ -246,6 +246,20 @@
           <span class="tag">SOLID</span><span class="tag">Clean Code</span><span class="tag">Design Patterns</span>
         </div>
       </div>
+      <div class="card">
+        <div class="card-top"><h3>Oyun Geliştirme</h3><span class="status online">ONLINE</span></div>
+        <p>2D/3D oyun mantığı ve sahne yönetimi.</p>
+        <div class="tags">
+          <span class="tag">Unity</span><span class="tag">C# (Oyun Script)</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-top"><h3>3D Modelleme</h3><span class="status online">ONLINE</span></div>
+        <p>Sahne ve karakter varlıkları için modelleme.</p>
+        <div class="tags">
+          <span class="tag">Autodesk Maya</span><span class="tag">3D Modelleme</span>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -326,9 +340,14 @@
         <div class="commit-meta">OCP prensibi canlı olarak kanıtlandı</div>
       </div>
       <div class="commit">
-        <div class="commit-hash">#03-04</div>
-        <div class="commit-msg">Veritabanı yönetimi: normalizasyon, index performansı, stored procedure/view/trigger</div>
-        <div class="commit-meta">500.000 satırda ölçülebilir index kazanımı</div>
+        <div class="commit-hash">#03</div>
+        <div class="commit-msg">Veritabanı mimarisi: normalizasyon, ilişkisel tablo tasarımı</div>
+        <div class="commit-meta">1NF/2NF/3NF ile kötü tek tablodan 4 normalize tabloya geçiş</div>
+      </div>
+      <div class="commit">
+        <div class="commit-hash">#04</div>
+        <div class="commit-msg">İleri SQL: index performansı, stored procedure, view, trigger</div>
+        <div class="commit-meta">500.000 satırda ölçülebilir index kazanımı (58ms → 0ms)</div>
       </div>
       <div class="commit">
         <div class="commit-hash">#05</div>
@@ -350,9 +369,64 @@
         <div class="commit-meta">JWT ile kimlik doğrulama eklendi</div>
       </div>
       <div class="commit">
-        <div class="commit-hash">#09+</div>
-        <div class="commit-msg">Kütüphane Kitap Takip Sistemi: rol yönetimi, talep akışı, SignalR, dashboard</div>
-        <div class="commit-meta">projenin tamamı → kutuphane-sistemi reposu</div>
+        <div class="commit-hash">#09</div>
+        <div class="commit-msg">Kütüphane Sistemi — kuruluş: ASP.NET Core MVC projesi, Code First migration</div>
+        <div class="commit-meta">Yazar/Kitap/Öğrenci/OdunAlma modelleri sıfırdan tasarlandı</div>
+      </div>
+      <div class="commit">
+        <div class="commit-hash">#10</div>
+        <div class="commit-msg">Kütüphane Sistemi: Kitaplar için tam CRUD ekranları, ViewBag ile dropdown</div>
+        <div class="commit-meta">Razor View'lar, form binding, Tag Helper'lar</div>
+      </div>
+      <div class="commit">
+        <div class="commit-hash">#11</div>
+        <div class="commit-msg">Kütüphane Sistemi: DataAnnotations validasyonu, Öğrenciler modülü</div>
+        <div class="commit-meta">ModelState.IsValid ile sunucu tarafı doğrulama</div>
+      </div>
+      <div class="commit">
+        <div class="commit-hash">#12</div>
+        <div class="commit-msg">Kütüphane Sistemi: Ödünç alma/verme akışı, otomatik gecikme takibi</div>
+        <div class="commit-meta">14 günlük süre hesaplama, "GECİKTİ" uyarısı</div>
+      </div>
+      <div class="commit">
+        <div class="commit-hash">#13</div>
+        <div class="commit-msg">Kütüphane Sistemi: Yönetim paneli (dashboard), navigasyon menüsü</div>
+        <div class="commit-meta">Gerçek zamanlı özet istatistikler</div>
+      </div>
+      <div class="commit">
+        <div class="commit-hash">#14</div>
+        <div class="commit-msg">Kütüphane Sistemi: Yazarlar modülü, arama ve sıralama özellikleri</div>
+        <div class="commit-meta">Veri bütünlüğü kuralı: kitaplı yazar silinemez</div>
+      </div>
+      <div class="commit">
+        <div class="commit-hash">#15</div>
+        <div class="commit-msg">Kütüphane Sistemi: Rol tabanlı yetkilendirme (Admin / Öğrenci)</div>
+        <div class="commit-meta">Cookie tabanlı kimlik doğrulama, kullanıcı kaydı, şifre hash'leme</div>
+      </div>
+      <div class="commit">
+        <div class="commit-hash">#16</div>
+        <div class="commit-msg">Kütüphane Sistemi: Ödünç talep & onay akışı</div>
+        <div class="commit-meta">Öğrenci talep eder → Admin onaylar → sistem otomatik senkronize olur</div>
+      </div>
+      <div class="commit">
+        <div class="commit-hash">#17</div>
+        <div class="commit-msg">Kütüphane Sistemi: SignalR ile anlık bildirim sistemi</div>
+        <div class="commit-meta">Kalıcı bildirim geçmişi, okunmamış rozeti</div>
+      </div>
+      <div class="commit">
+        <div class="commit-hash">#18</div>
+        <div class="commit-msg">Kütüphane Sistemi: Chart.js dashboard grafikleri, modern arayüz tasarımı</div>
+        <div class="commit-meta">Gradient kartlar, kategori sistemi, kapak resmi yükleme, sayfalama</div>
+      </div>
+      <div class="commit">
+        <div class="commit-hash">#19</div>
+        <div class="commit-msg">Teknik servis desteği: bilgisayar formatlama ve Windows kurulumu</div>
+        <div class="commit-meta">Sürücü kurulumu, temel sistem yapılandırması</div>
+      </div>
+      <div class="commit">
+        <div class="commit-hash">#20</div>
+        <div class="commit-msg">Teknik servis desteği: arızalı/sorunlu bilgisayarların teşhisi ve bakımı</div>
+        <div class="commit-meta">Donanım/yazılım sorun giderme, kullanıcı destek talepleri</div>
       </div>
     </div>
   </div>
@@ -365,8 +439,8 @@
       <p>Sorular, staj/iş fırsatları veya proje önerileri için bana ulaşabilirsin.</p>
       <div class="contact-links">
         <a href="https://github.com/seyitaliyilmaz-dev" class="btn btn-primary" target="_blank">GitHub</a>
-        <a href="#" class="btn btn-ghost">LinkedIn</a>
-        <a href="#" class="btn btn-ghost">E-posta</a>
+        <a href="https://www.linkedin.com/in/seyit-ali-y-8335aa257/" class="btn btn-ghost" target="_blank">LinkedIn</a>
+        <a href="mailto:seyitaliyilmaz.2000@gmail.com" class="btn btn-ghost">E-posta</a>
       </div>
     </div>
   </div>
