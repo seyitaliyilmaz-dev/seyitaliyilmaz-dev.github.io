@@ -58,23 +58,14 @@
 
   /* ---------- HERO / TERMINAL ---------- */
   .hero{ padding:100px 0 70px; }
-  .term{
-    background:var(--panel); border:1px solid var(--border); border-radius:var(--radius);
-    overflow:hidden; box-shadow:0 30px 60px -30px rgba(0,0,0,.6);
+  .hero-top{ display:flex; align-items:center; gap:36px; flex-wrap:wrap; }
+  .avatar{
+    width:180px; height:180px; border-radius:50%; object-fit:cover; flex-shrink:0;
+    border:3px solid var(--border); box-shadow:0 20px 40px -20px rgba(0,0,0,.6);
   }
-  .term-bar{
-    display:flex; align-items:center; gap:8px; padding:12px 16px;
-    background:var(--panel-2); border-bottom:1px solid var(--border);
-  }
-  .dot{ width:10px; height:10px; border-radius:50%; }
-  .term-body{ padding:28px 26px 32px; font-family:'JetBrains Mono', monospace; font-size:14.5px; }
-  .term-body .line{ margin-bottom:6px; color:var(--muted); }
-  .term-body .prompt{ color:var(--green); }
-  .term-body .cmd{ color:var(--text); }
-  .caret{ display:inline-block; width:8px; height:16px; background:var(--blue); vertical-align:-3px; animation:blink 1s step-end infinite; }
-  @keyframes blink{ 50%{ opacity:0; } }
+  .hero-top-text{ flex:1; min-width:280px; }
 
-  .hero h1{ font-size:44px; line-height:1.15; margin-top:34px; }
+  .hero h1{ font-size:44px; line-height:1.15; }
   .hero h1 .hl{ color:var(--blue); }
   .hero p.lead{ color:var(--muted); font-size:17px; max-width:600px; margin-top:16px; }
   .hero-actions{ display:flex; gap:12px; margin-top:28px; flex-wrap:wrap; }
@@ -172,29 +163,19 @@
 
 <header class="hero">
   <div class="wrap">
-    <div class="term">
-      <div class="term-bar">
-        <div class="dot" style="background:#ff5f56"></div>
-        <div class="dot" style="background:#ffbd2e"></div>
-        <div class="dot" style="background:#27c93f"></div>
+    <div class="hero-top">
+      <img src="profil.jpg" alt="Seyit Ali Yılmaz" class="avatar" />
+      <div class="hero-top-text">
+        <h1>Merhaba, ben <span class="hl">Seyit Ali Yılmaz</span>.<br/>Bilgisayar Mühendisliği öğrencisiyim.</h1>
+        <p class="lead">Backend geliştirme, ilişkisel veritabanı tasarımı ve
+          gerçek dünya iş akışlarını (rol yönetimi, onay süreçleri, gerçek zamanlı bildirimler) uçtan uca inşa etmeyi
+          seviyorum. Aşağıda staj boyunca sıfırdan kurduğum, gerçek kod ve gerçek commit geçmişi olan projelerim var.</p>
+        <div class="hero-actions">
+          <a href="https://github.com/seyitaliyilmaz-dev" class="btn btn-primary" target="_blank">GitHub Profilim →</a>
+          <a href="#projects" class="btn btn-ghost">Projeleri Gör</a>
+          <a href="#contact" class="btn btn-ghost">İletişime Geç</a>
+        </div>
       </div>
-      <div class="term-body">
-        <div class="line"><span class="prompt">seyit@dev</span><span class="mono">:~$</span> <span class="cmd">whoami</span></div>
-        <div class="line">Seyit Ali Yılmaz — Backend Developer (.NET / C# / SQL Server)</div>
-        <div class="line"><span class="prompt">seyit@dev</span><span class="mono">:~$</span> <span class="cmd">git log --oneline -1</span></div>
-        <div class="line">8f2a1c9 feat: kütüphane sistemine rol tabanlı yetkilendirme eklendi</div>
-        <div class="line"><span class="prompt">seyit@dev</span><span class="mono">:~$</span> <span class="cmd">status</span><span class="caret"></span></div>
-      </div>
-    </div>
-
-    <h1>Kod yazan, veritabanı<br/>tasarlayan, <span class="hl">sistemler kuran</span><br/>bir geliştirici.</h1>
-    <p class="lead">Bilgisayar Mühendisliği öğrencisiyim. Backend geliştirme, ilişkisel veritabanı tasarımı ve
-      gerçek dünya iş akışlarını (rol yönetimi, onay süreçleri, gerçek zamanlı bildirimler) uçtan uca inşa etmeyi
-      seviyorum. Aşağıda staj boyunca sıfırdan kurduğum, gerçek kod ve gerçek commit geçmişi olan projelerim var.</p>
-    <div class="hero-actions">
-      <a href="https://github.com/seyitaliyilmaz-dev" class="btn btn-primary" target="_blank">GitHub Profilim →</a>
-      <a href="#projects" class="btn btn-ghost">Projeleri Gör</a>
-      <a href="#contact" class="btn btn-ghost">İletişime Geç</a>
     </div>
   </div>
 </header>
